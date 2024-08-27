@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open sans";
+}
+
+.headers {
+    font-size: 20px;
+    font-weight: SemiBold;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.headers input {
+    display: flex;
+    flex: 2;
+    height: 55px;
+    background-color: #D9D9D9;
+    border: #3a3a3a;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px #00000033;
+}
+
+.agent {
+    height: 95px;
+    width: 610px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #6F767E33;
+}
+.agent button {
+    height: 75px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 32px;
+    font-weight: Bold;
+    justify-content: center;
+    align-items: center;
+}
+.categories {
+    height: 210px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F767E33;
+    box-shadow: 0 4px 4px #00000033;
+    padding: 22px;
+    border-radius: 22px;
+}
+
