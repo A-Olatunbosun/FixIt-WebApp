@@ -656,13 +656,6 @@ a {
 }
 
 @media screen and (max-width: 880px) {
-  .nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
   .navbar-toggler {
     display: block;
   }
@@ -795,6 +788,14 @@ a {
 }
 
 @media screen and (max-width: 450px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .nav-bar .wrapper {
+    padding-inline: 1.2rem;
+  }
+
   .wrapper {
     padding-inline: 1rem;
   }
