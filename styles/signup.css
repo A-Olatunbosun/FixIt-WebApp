@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #0c0c20;
+}
+
+a {
+  text-decoration: none;
+  color: #0c0c20;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+span {
+  display: inline-block;
+  width: 6rem;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.back a {
+  font-size: 2rem;
+}
+
+.welcome-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.heading > div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.heading p {
+  font-size: 1.3rem;
+}
+
+.have-an-account p {
+  font-size: 1.2rem;
+}
+
+.loginBtn {
+  font-weight: 500;
+  color: #52b69a;
+  padding: 5px 10px;
+  border: 1px solid #52b69a;
+  border-radius: 0.5rem;
+  margin-left: 5px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 60%;
+  margin: 0 auto;
+  padding-block: 3rem 2rem;
+}
+
+.signup-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.signup-details label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.signup-details input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #52b69a;
+  box-shadow: 2px 2px 8px rgba(159, 159, 159, 0.5);
+}
+
+.signup-details input:focus {
+  outline: 1px solid #52b69a;
+  background-color: rgba(225, 225, 225, 0.3);
+}
+
+.signup-details input::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(128, 128, 128, 0.615);
+}
+
+button[type="submit"] {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  color: #ffffff;
+  background-color: #52b69a;
+  border-radius: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.password-entry,
+.email-location-entry {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.signup-options {
+  text-align: center;
+}
+
+.signup-options p {
+  font-weight: 500;
+  color: rgb(95, 95, 95);
+}
+.signup-options p::after {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 1px;
+  background-color: rgba(148, 148, 148, 0.569);
+  margin-bottom: 3px;
+  margin-left: 6px;
+}
+
+.signup-options p::before {
+  content: "";
+  display: inline-block;
+  width: 4rem;
+  height: 1px;
+  background-color: rgba(148, 148, 148, 0.569);
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.other-options {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.other-options img {
+  width: 4rem;
+  margin-inline: 0.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .signup-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .back a {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  span {
+    display: inline-block;
+    width: 5rem;  
+  }
+
+  .heading p {
+    font-size: 1rem;
+  }
+
+  .have-an-account p {
+    font-size: 1rem;
+  }
+
+  .signup-form {
+    width: 80%;
+  }
+
+  .password-entry,
+  .email-location-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .welcome-message {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  span {
+    display: inline-block;
+    width: 3.2rem;
+  }
+
+  .heading p,
+  .have-an-account p,
+  .signup-details label {
+    font-size: 0.8rem;
+  }
+
+  .have-an-account {
+    align-self: flex-end;
+  }
+
+  .signup-form {
+    width: 90%;
+    padding-block: 1rem;
+  }
+
+  .signup-details input::placeholder {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .signup-form {
+    width: 95%;
+    gap: 1rem;
+    padding-block: 1rem;
+  }
+
+  .signup-details input {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid #52b69a;
+    box-shadow: 2px 2px 8px rgba(159, 159, 159, 0.5);
+  }
+
+  button[type="submit"] {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .signup-options p {
+    font-size: 0.8rem;
+  }
+
+  .other-options {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+
+  .other-options img {
+    width: 3rem;
+    margin-inline: 0.5rem;
+    cursor: pointer;
+  }
+}
