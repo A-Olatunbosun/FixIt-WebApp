@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link to favicon -->
+    <link
+      rel="icon"
+      href="./images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="../styles/signup.css" />
+
+    <!-- link to google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="back">
+          <a href="../pages/signupprompt.html"
+            ><i class="ri-arrow-left-line"></i
+          ></a>
+        </div>
+
+        <div class="welcome-message">
+          <div class="heading">
+            <div>
+              <h1>Welcome to</h1>
+              <span
+                ><img src="../images/FixIt logo.png" alt="Fixit Logo"
+              /></span>
+            </div>
+            <p>Create an Account to Get Started</p>
+          </div>
+
+          <div class="have-an-account">
+            <p>
+              Already have an account? <a href="" class="loginBtn">Login</a>
+            </p>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="signup-form">
+            <div class="signup-details">
+              <label for="fullname">Enter your full name</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Full name"
+              />
+            </div>
+
+            <div class="email-location-entry">
+              <div class="signup-details">
+                <label for="email">Enter your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email address"
+                />
+              </div>
+
+              <div class="signup-details">
+                <label for="location">Enter your location</label>
+                <input
+                  type="text"
+                  name="location"
+                  id="location"
+                  placeholder="Location"
+                />
+              </div>
+            </div>
+
+            <div class="password-entry">
+              <div class="signup-details">
+                <label for="password">Enter password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+              </div>
+
+              <div class="signup-details">
+                <label for="confirmPassword">Confirm password</label>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  id="confirmPassword"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+
+        <div class="signup-options">
+          <p>or Sign Up with</p>
+        </div>
+        <div class="other-options">
+          <img src="../images/google-icon.svg" alt="google-icon" />
+          <img src="../images/apple-icon.svg" alt="apple-icon" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
