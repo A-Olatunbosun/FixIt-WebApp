@@ -34,6 +34,10 @@ span {
   margin: 0 auto;
 }
 
+.back {
+  padding-top: 0.5rem;
+}
+
 .back a {
   font-size: 2rem;
 }
@@ -191,7 +195,7 @@ button[type="submit"] {
 
   span {
     display: inline-block;
-    width: 5rem;  
+    width: 5rem;
   }
 
   .heading p {
