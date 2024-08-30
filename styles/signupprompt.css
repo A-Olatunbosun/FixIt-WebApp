@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0c0c20;
+}
+
+a {
+  text-decoration: none;
+  color: #0c0c20;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.8rem;
+}
+
+.nav a i {
+  font-size: 2.5rem;
+}
+
+.nav img {
+  width: 10%;
+}
+
+.roles {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.roles a {
+  display: block;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+}
+
+.user-role,
+.handyman-role {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  border: 2px solid rgba(118, 118, 118, 0.503);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.user-role:hover,
+.handyman-role:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 4px 12px rgba(159, 159, 159, 0.5);
+}
+
+.user-role div {
+  margin-block: auto;
+}
+
+@media screen and (max-width: 1250px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav a i {
+    font-size: 2rem;
+  }
+
+  .role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .user-role,
+  .handyman-role {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav a i {
+    font-size: 1.5rem;
+  }
+
+  .roles {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .role-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .user-role,
+  .handyman-role {
+    width: 60%;
+  }
+
+  .user-role p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .nav img {
+    width: 15%;
+  }
+
+  .roles {
+    margin-top: 0.8rem;
+  }
+
+  .role-selection {
+    gap: 1.8rem;
+  }
+
+  .user-role,
+  .handyman-role {
+    width: 80%;
+  }
+
+  .user-role p {
+    width: 100%;
+    margin: auto;
+  }
+}
