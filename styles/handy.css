@@ -18,11 +18,18 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-between; */
     font-family: "Open sans";
     background-color: #F6FAF9;
 }
-
+a {
+    color: black;
+    text-decoration: none;
+}
+* button {
+    color: white;
+    cursor: pointer;
+}
 .headers {
     font-size: 20px;
     font-weight: SemiBold;
@@ -36,7 +43,15 @@ body {
     align-items: center;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
-
+.headers button {
+    width: 150px;
+    height: 38px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: SemiBold;
+}
 .headers img {
     width: 115px;
 }
@@ -62,7 +77,7 @@ body {
 }
 .agent {
     height: 95px;
-    width: 610px;
+    width: 650px;
     margin: 20px;
     display: flex;
     flex-direction: row;
@@ -75,24 +90,28 @@ body {
 .agent button {
     height: 75px;
     margin: 0 20px;
-    background-color: white;
+    padding: 20px;
+    color: black;
     border: none;
     border-radius: 50px;
     font-size: 32px;
     font-weight: Bold;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+}
+.agent button:hover {
+    background-color: white;
+    box-shadow: 0 4px 4px #00000033;
 }
 .categories {
-    height: 210px;
     margin: 0 50px;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     justify-self: center;
-    padding: 22px;
+    /* padding: 22px; */
     border-radius: 22px;
 }
 
@@ -108,9 +127,9 @@ body {
 .category_list {
     width: 100%;
     margin: 0 50px;
-    padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #6F767E33;
@@ -133,40 +152,56 @@ body {
 .bookings {
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    flex-wrap: wrap;
+    margin: 50px;
+    /* background-color: #76C893; */
     /* justify-content: space-between; */
 }
-
-.orders_and_reviews {
+.booking_heading {
+    display: flex;
+    justify-content: space-between;
     margin: 20px;
+}
+.orders_and_reviews {
+    /* margin: 20px; */
     display: flex;
     flex-direction: column;
     /* box-shadow: 0 4px 4px #00000033;
     border-radius: 22px; */
-    flex: 2;
+    flex: 3;
 }
 
 .ongoing_orders {
     /* width: 45%; */
-    margin: 10px;
+    /* margin: 10px; */
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
+.p1 {
+    font-size: 16px;
+    font-weight: Bold;
+}
+.p2 {
+    font-size: 12px;
+    color: #535763;
+}
 .order {
-    width: 395px;
+    /* min-width: 395px; */
     /* height: 245px; */
     display: flex;
     flex-direction: column;
     margin: 20px;
     border-radius: 22px;
     background-color: white;
+    flex: 1;
 }
 .order_type {
     display: flex;
     flex-direction: row;
-    
 }
 .order_type img {
     margin: 10px;
@@ -192,43 +227,117 @@ body {
 }
 .provider {
     display: flex;
+    /* flex-wrap: wrap; */
 }
 .provider div {
     margin-left: 10px;
 }
 .service_provider button {
-    width: 81px;
+    width: 100px;
     background-color: var(--primary);
     border: none;
     border-radius: 12px;
     padding: 10px 20px;
+    margin: 0 5px;
 }
 .reviews {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    flex-wrap: wrap;
+    /* height: 300px; */
+}
+.review_heading {
+    font-size: 20px;
+    font-weight: Bold;
+    margin: 20px;
 }
 .single_review {
     display: flex;
     flex-direction: row;
-    height: 250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 30px; */
+    /* height: 250px; */
+    /* background-color: #6F767E; */
 }
 .single_review div {
-    height: 300px;
-    margin: 20px;
+    flex: 1;
+    width: 350px;
+    /* height: 300px; */
+    margin: 10px 20px;
+    padding: 10px 20px;
     border-radius: 22px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+.reviewer div {
+    margin: 0;
+}
+.p3 {
+    font-size: 18px;
+    font-weight: Bold;
+}
+.p4 {
+    font-size: 12px;
+    color: #535763;
 }
 .upcoming_orders {
     padding: 0 5px;
     height: 500px;
     width: 310px;
+    display: block;
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: center;
+    margin: 0 20px;
+    border-radius: 7px;
+    flex: 1;
+}
+.upcoming_orders p {
+    text-align: center;
+}
+.upcoming_orders button {
+    display: block;
+    width: 150px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary);
+}
+.upcoming_orders button {
+    margin: 10px;
+}
+.upcoming_orders img {
+    margin: 10px;
+}
+.upcoming_orders p {
+    margin: 10px;
+}
+.upcoming_heading {
+    width: 105px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    background-color: #6759ff1c;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: SemiBold;
+}
+
+.upcoming_orders div {
+    /* margin: 10px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
-    background-color: #6F767E33;
-    border-radius: 22px;
-    flex: 1;
 }
+
+.upcoming {
+    height: 500px;
+    background-color: #6F767E33;
+    margin: 20px 0;
+}
+

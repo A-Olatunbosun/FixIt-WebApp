@@ -9,14 +9,14 @@
 <body>
     <div class="headers">
         <img src="images/FixIt logo.png" alt="fixit_logo">
-        <div>Home</div>
+        <button>Home</button>
         <div class="search_bar">
             <img src="icons/lens.png" alt="search glass" style="width: 20px; height: 20px;">
             <input type="search" placeholder="Search job">
         </div>
-        <div>History</div>
-        <img src="icons/Notification.png" alt="notification icon" style="width: 20px; height: 20px;">
-        <div><img src="icons/fluent-mdl2_contact.png" alt="alarm" style="width: 20px; height: 20px;">Profile</div>
+        <button>History</button>
+        <button><img src="icons/Notification.png" alt="notification icon" style="width: 20px; height: 20px;"></button>
+        <button><img src="icons/fluent-mdl2_contact.png" alt="alarm" style="width: 20px; height: 20px;">Profile</button>
     </div>
     <div class="agent">
         <button>Handyman</button>
@@ -33,7 +33,7 @@
                 <p>Ac Repair</p>
             </div>
             <div class="categories_item">
-                <img src="icons/Beauty.png" alt="c1">
+                <img src="icons/Plumbing.png" alt="c1">
                 <p>Carpentry</p>
             </div>
             <div class="categories_item">
@@ -60,15 +60,20 @@
     </section>
     
     <section class="bookings">
-        <div class="booking_heading">Bookings</div>
         <div class="orders_and_reviews">
+            <div class="booking_heading">
+                <p style="font-size: 18px; font-weight: Bold;">Bookings</p>
+                <p style="justify-self: right; font-size: 15px; font-weight: SemiBold; color: black;">
+                    <a href="">view all bookings</a>
+                </p>
+            </div>
             <div class="ongoing_orders">
                 <div class="order">
                     <div class="order_type">
                         <img src="icons/Ac Repair.png" alt="service_pics" style="width: 50px; height: 50px;">
                         <div>
-                            <p>AC Installation</p>
-                            <p>Reference Code: #D-571224</p>
+                            <p class="p1">AC Installation</p>
+                            <p class="p2">Reference Code: #D-571224</p>
                         </div>
                     </div>
                     <hr style="margin: 0 20px; border-color: #cacaca4f;">
@@ -78,8 +83,8 @@
                         <div class="provider">
                             <img src="icons/48 place holder.png" alt="">
                             <div>
-                                <p>Aremu Family</p>
-                                <p>Service provider</p>
+                                <p class="p1">Aremu Family</p>
+                                <p class="p2">Service provider</p>
                             </div>
                         </div>
                         <button>Call</button>
@@ -90,8 +95,8 @@
                     <div class="order_type">
                         <img src="icons/Painting.png" alt="service_pics" style="width: 50px; height: 50px;">
                         <div>
-                            <p>AC Installation</p>
-                            <p>Reference Code: #D-571224</p>
+                            <p class="p1">Painting</p>
+                            <p class="p2">Reference Code: #D-571224</p>
                         </div>
                     </div>
                     <hr style="margin: 0 20px; border-color: #cacaca4f;">
@@ -101,8 +106,8 @@
                         <div class="provider">
                             <img src="icons/48 place holder.png" alt="">
                             <div>
-                                <p>Damilola Dodo</p>
-                                <p>Service provider</p>
+                                <p class="p1">Damilola Dodo</p>
+                                <p class="p2">Service provider</p>
                             </div>
                         </div>
                         <button>Call</button>
@@ -113,27 +118,43 @@
             <div class="reviews">
                 <div class="review_heading">Reviews</div>
                 <div class="single_review">
-                    <div>
-                        <p>Mr Daniel</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium est saepe accusamus assumenda eveniet odit reprehenderit ipsam obcaecati 
+                    <div class="reviewer">
+                        <p class="p3">Mr Daniel</p>
+                        <p class="p4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti provident dicta ut alias, praesentium maiores quia laborum accusantium debitis tenetur nemo voluptatibus perspiciatis non fugiat iusto porro. Rerum accusantium tenetur atque eligendi. Quod quis necessitatibus quae pariatur nesciunt saepe dolores quibusdam, vitae veritatis aspernatur asperiores culpa ullam quasi neque nihil, voluptas molestiae quo accusantium distinctio laboriosam labore ex quia fuga earum? Quis velit error reprehenderit quod omnis iusto eius libero quasi. Nostrum culpa blanditiis fugiat impedit cupiditate quaerat voluptatum quo saepe dolorem, delectus rem adipisci inventore nihil id consequuntur. Cupiditate esse in illum? Consequuntur, nemo doloribus eum voluptatibus quas aperiam.
                         </p>
+                        <div>
+                            <img src="icons/star.png" alt="">
+                            <img src="icons/star.png" alt="">
+                            <img src="icons/star.png" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <p>Mr Daniel</p>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem accusantium est saepe accusamus assumenda eveniet odit reprehenderit ipsam obcaecati  
+                    <div class="reviewer">
+                        <p class="p3">Mr Daniel</p>
+                        <p class="p4">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium alias a hic quibusdam distinctio. Modi fuga delectus reprehenderit magnam? Sequi dolore, ipsam culpa ullam id corporis placeat aliquam, doloremque velit aut unde, animi distinctio modi. Iusto, fuga temporibus itaque inventore amet accusamus quo sunt. Provident adipisci labore sunt deserunt possimus iste, laboriosam enim in odio totam. Porro explicabo nobis provident. Accusamus magni voluptate illo expedita reiciendis rerum sequi porro excepturi. Voluptas laboriosam, aperiam quibusdam porro odit iusto nam ipsam, error provident repellat necessitatibus doloribus! Architecto sapiente a, odio inventore nisi possimus ad incidunt ipsa ipsum sint, ducimus porro deserunt minus?
                         </p>
+                        <div>
+                            <img src="icons/star.png" alt="">
+                            <img src="icons/star.png" alt="">
+                            <img src="icons/star.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="upcoming_orders">
-            <p>No Upcoming Orders</p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque expedita nobis ?
-            </p>
-            <button>View all services</button>
+            <div class="upcoming_heading">Upcoming</div>
+            <div class="upcoming">
+                <img src="icons/Component 13.png" alt="note">
+                <div>
+                    <p style="font-size: 18px; font-weight: Bold;">No Upcoming Orders</p>
+                    <p style="font-size: 12px; color: #535763;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque expedita nobis ?
+                    </p>
+                    <button>View all services</button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
